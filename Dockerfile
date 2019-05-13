@@ -19,7 +19,7 @@ RUN apt-get update \
 		flex \
 		bison \
 		gperf \
-	&& ln -s /usr/bin/python2.7 /usr/local/bin/python
+	&& ln -s /usr/bin/python2.7 /usr/local/bin/python \
 	&& curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 	&& python get-pip.py && rm get-pip.py \
 	&& pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/ \
